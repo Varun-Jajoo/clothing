@@ -1,0 +1,295 @@
+.body {
+    margin: 0 3vw;
+  }
+  #lol:hover{
+    color: black;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 15vw 10vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 5vw 11vh 18vw 18vw;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: relative;
+    margin-top: 2vw;
+    margin-left:5vw ;
+    margin-right: 5vw;
+  }
+  
+  .main1 {
+     
+    grid-area: 1/1/2/8;
+    border-radius: 10px;
+    z-index: 999;
+
+     }
+  
+  .main2 {
+    
+    background-color:black;
+    grid-area: 2/1/5/3;
+    display: flex;
+    
+    flex-direction: column;
+    
+    border-radius: 20px;
+    font-family: "montserrat";
+    
+
+  }
+.filter{
+  background-color: #c1f377;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 2vw;
+  font-size: 4vh;
+
+}
+.gender{
+  background-color: black;
+ margin-bottom: 20px;
+  position: relative;
+  grid-row: 3/4;
+  font-size: 4vh;
+
+  
+}
+
+.dropdown-open + .size,
+.dropdown-open + .color {
+  margin-top: 10vw; 
+  background-color: black;
+}
+
+/* Additional styles for dropdown positioning */
+.dropdown {
+  position: relative;
+  background-color: black;
+  
+}
+.dropdown-item:hover{
+  background-color: black;
+  color: #c1f377;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  --bs-dropdown-link-color: none;
+  display: none;
+}
+
+.dropdown-open .dropdown-menu {
+  display: block;
+  background-color: rgba(34,50,84,0.03);
+
+  color: #c1f377;
+  --bs-dropdown-bg: 
+}
+.sizes{
+  background-color: #c1f377;
+  color: black;
+  padding: 0 20px;
+  border: 1px solid #c1f377 ;
+  border-radius: 25px;
+  font-weight: bolder;
+  margin: 10px 10px;
+}
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(34,50,84,0.03);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx1:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx1:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx1:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+#cbx2:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx2:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx2:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+#cbx3:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx3:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx3:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+.size{
+  background-color: black;
+  grid-area: 4/1/5/7;
+  font-size: 4vh;
+
+}
+.color{
+  background-color: black;
+  font-size: 4vh;
+  grid-area: 5/1/6/7; 
+  margin-top: 20px;
+  font-family: "montserrat";
+
+}
+.price{
+  font-size: 21px;
+  color: #c1f377;
+  font-family: "montserrat";
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.range{
+  margin-top: 20px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background-color: #c1f377; /* Set the desired color for the slider button */
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #c1f377; /* Set the desired color for the slider button */
+}
+
+input[type="range"]::-ms-thumb {
+  background-color: #c1f377; /* Set the desired color for the slider button */
+}
+
+  .main3 {
+    /* background-color: #fff; */
+    padding-top: 1vw;
+    grid-area: 2/3/3/8;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+  
+  .main4 {
+    background-color: #fff;
+    overflow: hidden;
+    grid-area: 3/3/4/4;
+    border-radius: 10px;
+
+  }
+  .main5 {
+    background-color: #fff;
+    grid-area: 4/3/5/4;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+   .main6 {
+    background-color: #fff;
+    grid-area: 3/6/4/7;
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+   .main7{
+    background-color: #fff;
+    overflow: hidden;
+    grid-area: 3/4/4/5;
+    border-radius: 10px;
+
+  } 
+  .main8{
+    background-color: #fff;
+    grid-area: 3/5/4/6;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .main9{
+    background-color: #fff;
+    grid-area: 4/4/5/5;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+  }
+  .main10{
+    background-color: #fff;
+    grid-area: 4/5/5/6;
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+  .main11{
+    background-color: #fff;
+    grid-area: 4/6/5/6;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
